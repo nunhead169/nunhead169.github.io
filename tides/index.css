@@ -57,37 +57,70 @@ table {
 
 /* END OF RESET */
 
+
+
+html,body {
+    background-color: #D4D4D4;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 840px;
+    
+}
+
+.wrap {
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+.full {
+    padding-top: 80px;
+    height: 100%;
+    width: 870px;
+    margin: 0 auto;
+}
+
 /* RESPONSIVE HEADER */
 
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
+  background-color: #356EDF;
+  padding: 0px 10px;
+    margin-top: 36px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-style: outset;
+    border-width: 3px;
+    border-color: #0041C4;
+}
+
+.logo {
+    width: 450px;
+    position: absolute;
+    margin: 0 auto;
+    top: 5px;
 }
 
 .header a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
-  border-radius: 4px;
-}
-
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
 }
 
 .header a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #0041C4;
+  color: white;
 }
 
 .header a.active {
-  background-color: dodgerblue;
+  background-color: #0041C4;
   color: white;
 }
 
@@ -95,7 +128,22 @@ table {
   float: right;
 }
 
-@media screen and (max-width: 500px) {
+
+/********/
+
+
+@media screen and (max-width: 840px) {
+    .container {
+        width: 100%;
+    }
+    
+    .full {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 680px) {
   .header a {
     float: none;
     display: block;
@@ -104,4 +152,9 @@ table {
   .header-right {
     float: none;
   }
+    .header {
+        padding-top: 70px;
+    }
+    .logo {
+    }
 }
